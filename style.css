@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&display=swap');
+
+header main{
+    background-color: #00b600;
+    color: white;
+    padding: 1rem;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anuphan', sans-serif;
+    font-weight: normal;
+}
+
+header main{
+background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
+background-position: center;
+
+    text-transform:capitalize;
+}
+
+header h1{
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+header h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    position: absolute;
+margin-left: 10px;
+}
+
+.menu{
+    list-style-type: none;
+    background-color: #084e08;
+    padding-block: 15px;
+    height: 50px;
+}
+.item__menu{
+    display: inline-block;
+    margin-inline: 7%;
+}
+.item__menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.item__menu.active a,
+.item__menu a:hover{
+    text-decoration: underline 2px;
+}
+
+.presentacion{
+    background-color: #d8d8d8cf;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+.presentacionTexto{
+    display: flex;
+    max-width: 500px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+.presentacionFoto{
+margin-left: 300px;
+margin-bottom: 50px;
+}
+footer {
+    background-color: #084e08;;
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer section{
+    display: inline;
+    float: right;
+    margin-right: 3rem;
+    padding: 5px;
+
+}
+footer p{
+    margin: 1rem;
+}
+.contenedor{
+    background-color: rgba(216, 216, 216, 0.81);
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "textoSecu imgIsfa "
+    "imgCurso textoCurso " ;
+}
+
+.texto1{
+    background-color: rgba(94, 93, 93, 0.81);
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    grid-area: textoSecu;
+}
+.img1{
+    background-image: url(./img/isfa.png);
+    background-size:cover;
+    background-position: center;
+    width: 50%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 6px inset #008000;
+    border-radius: 10px;
+    grid-area: imgIsfa;
+}
+.img2{
+    background-image: url(./img/udemy.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+    border: 6px outset #008000;
+    border-radius: 10px;
+    grid-area: imgCurso;
+}
+.texto2{
+    background-color:  rgba(94, 93, 93, 0.81);
+    text-align: center;
+    padding-top: 15px;
+    color: white;
+    text-transform: uppercase;
+    grid-area: textoCurso;
+}
+.secu{
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 30px;
+}
+.tituloCurso{
+    text-decoration: underline;
+    padding: 10px;
+    font-size: 30px;
+}
+#edu{
+    text-transform: capitalize;
+    padding: 40px;
+    font-size: 15px;
+}
+#curso{
+    text-transform: capitalize;
+    padding: 30px;
+    font-size: 15px;
+}
+#secuTerminado{
+    padding: 50px;
+}
+
+#cardExp{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #d8d8d8cf;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+
+}
+.card{
+    width: 30%;
+    height: 450px;
+    min-height: 300px;
+    background-color: #077707;
+    padding: 10px;
+    border: 3px solid #070505;
+}
+
+.cardImg{
+    background-image: url(img/complejo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+.cardImg2{
+    background-image: url(img/empty\ img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+.cardImg3{
+    background-image: url(img/empty\ img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+
+.cardTitle{
+    text-align: center;
+    font-family: 'Anuphan', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-size: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.cardDesc{
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    text-transform: capitalize;
+    margin: 5px;
+}
+
+.cardBoton{
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+.cardBoton:hover{
+    background-color: rgb(224, 146, 0)}
