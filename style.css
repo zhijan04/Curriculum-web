@@ -61,6 +61,12 @@ margin-left: 10px;
 .item__menu a:hover{
     text-decoration: underline 2px;
 }
+.dropdown{
+    display: flex;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
 
 .presentacion{
     background-color: #d8d8d8cf;
@@ -256,3 +262,98 @@ footer p{
 }
 .cardBoton:hover{
     background-color: rgb(224, 146, 0)}
+
+    @media screen and (max-width: 480px){
+        .titulo {
+            display: flex;
+            justify-content: center;
+            max-width: 320px;
+            font-size: 25px;
+            padding-top: 10px;
+            line-height: 10px;
+            width: 100%;
+        }
+        .logo{
+            width: 50px;
+            height: auto;
+            left: 0;
+        }
+        .dropdown{
+            visibility: inherit;
+            transition: 0,3s;
+            height: 50px;
+            width: 500px;
+            left: 20px;
+            margin-block: 20px;
+        }
+        .menu{
+            height: 80px;
+            width: 100%;
+            font-size: 20px;
+            padding: 1px;
+        }
+        .item__menu{
+            visibility: hidden;
+        }
+        .presentacion{
+            height: 100%;
+            max-width: 360px;
+        }
+        .presentacionTexto{
+            display: inline;
+            max-width: 360px;
+            text-align: center;
+            padding: 50px;
+            padding-bottom: 0;
+            justify-content: center;
+            margin: 20px;
+            margin-left: 0;
+            float: center;
+            left: 0;
+            }
+            .presentacionFoto{
+            display: block;
+            width: 50%;
+            align-items: center;
+            justify-content: center;
+            margin: 10vh;
+            float: center;
+            margin-top: 1px;
+                }
+
+                
+        .contenedor{
+            height: auto;
+            width: 100%;
+            grid-template-columns: 1;
+            grid-template-rows: repeat(4,1fr);
+            grid-template-areas: 
+            "textoSecu"
+            "imgIsfa"
+            "textoCurso"
+            "imgCurso";
+        }
+        .img1{
+            width: 320px;
+            height: 220px;
+        }
+        .img2{
+            width: 320px;
+            height: 220px;
+        }
+        #cardExp{
+        display: block;
+        position: relative;
+            max-width: 320px;
+            height: 1450px;
+            padding: 3px;
+            height: 1fr;
+        }
+        .card{
+            position: relative;
+            width: 300px;
+            margin: 5px;
+            left: 0;
+            height: 1fr;
+        }
+        }
