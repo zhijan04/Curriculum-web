@@ -264,6 +264,9 @@ footer p{
     background-color: rgb(224, 146, 0)}
 
     @media screen and (max-width: 480px){
+        header main{
+            width: 100%;
+        }
         .titulo {
             display: flex;
             justify-content: center;
@@ -282,7 +285,7 @@ footer p{
             visibility: inherit;
             transition: 0,3s;
             height: 50px;
-            width: 500px;
+            width: 5px;
             left: 20px;
             margin-block: 20px;
         }
@@ -296,18 +299,16 @@ footer p{
             visibility: hidden;
         }
         .presentacion{
-            height: 100%;
-            max-width: 360px;
+            height: 100vh;
+            max-width: 480px;
         }
         .presentacionTexto{
             display: inline;
-            max-width: 360px;
+            max-width: 480px;
             text-align: center;
-            padding: 50px;
             padding-bottom: 0;
             justify-content: center;
             margin: 20px;
-            margin-left: 0;
             float: center;
             left: 0;
             }
@@ -316,11 +317,9 @@ footer p{
             width: 50%;
             align-items: center;
             justify-content: center;
-            margin: 10vh;
-            float: center;
+            margin: 80px;
             margin-top: 1px;
                 }
-
                 
         .contenedor{
             height: auto;
@@ -356,4 +355,10 @@ footer p{
             left: 0;
             height: 1fr;
         }
+        footer{
+            width: 100%;
+        }
+        footer section{
+        visibility: hidden;
+        }   
         }
