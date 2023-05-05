@@ -194,7 +194,6 @@ footer p{
     width: 100%;
     height: 100%;
     padding-bottom: 45px;
-
 }
 .card{
     width: 30%;
@@ -260,8 +259,95 @@ footer p{
     padding: 10px 20px;
     transition: 0.3s;
 }
+#cardPort{
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: #d8d8d8cf;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+}
+.cardPortaf{
+    width: 30%;
+    height: 450px;
+    min-height: 300px;
+    background-color: #077707;
+    padding: 10px;
+    border: 3px solid #070505;
+}
+.cardImgPort{
+    background-image: url(./img/GitHub.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+.cardImgPort2{
+    background-image: url(./img/GitHub.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+.cardImgPort3{
+    background-image: url(./img/GitHub.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+.cardTitlePort{
+    text-align: center;
+    font-family: 'Anuphan', sans-serif;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    font-size: 25px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.cardDescPort{
+    padding: 15px;
+    text-align: justify;
+    color: white;
+    text-shadow: 0 0 5px #000;
+    text-transform: capitalize;
+    margin: 5px;
+}
+.cardBotonPort{
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: 0.3s;
+}
+
+.cardBotonPort:hover{
+    background-color: rgb(224, 146, 0)}
 .cardBoton:hover{
     background-color: rgb(224, 146, 0)}
+
+    .grupoForm{
+        font-family: 'Anuphan', sans-serif;
+        font-size: 40px;
+        background-color: #d8d8d8cf;
+        height: 100%;
+        
+    }
+    .formulario{
+        padding: 50px;
+        position: relative;
+        background-color: #d8d8d8cf;
+        height: 70vh;
+    }
 
     @media screen and (max-width: 480px){
         header main{
@@ -343,7 +429,7 @@ footer p{
         #cardExp{
         display: block;
         position: relative;
-            max-width: 320px;
+            max-width: 480px;
             height: 1450px;
             padding: 3px;
             height: 1fr;
@@ -355,6 +441,22 @@ footer p{
             left: 0;
             height: 1fr;
         }
+
+        #cardPort{
+            display: block;
+            position: relative;
+                max-width: 480px;
+                height: 1450px;
+                padding: 3px;
+                height: 1fr;
+            }
+            .cardPortaf{
+                position: relative;
+                width: 300px;
+                margin: 5px;
+                left: 0;
+                height: 1fr;
+            }
         footer{
             width: 100%;
         }
