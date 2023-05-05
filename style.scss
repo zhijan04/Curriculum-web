@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&display=swap');
+
+$colorfondo: #084e08;
+$fondogris: #d8d8d8cf;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anuphan', sans-serif;
+    font-weight: normal;
+}
+
+header{ main {
+    background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
+    background-position: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 1rem;
+}
+    h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 0;
+}
+    h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+}
+
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.menu {
+    list-style-type: none;
+    background-color: $colorfondo;
+    padding-block: 15px;
+    height: 50px;
+}
+
+.item__menu {
+    display: inline-block;
+    margin-inline: 7%;
+}
+
+.item__menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.item__menu.active a,
+.item__menu a:hover {
+    text-decoration: underline 2px;
+}
+
+.dropdown {
+    display: flex;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.presentacion {
+    background-color: $fondogris;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.presentacionTexto {
+    display: flex;
+    max-width: 500px;
+    float: right;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+
+.presentacionFoto {
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: $colorfondo;
+    ;
+    position: fixed;
+    color: white;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    section {
+        display: inline;
+        float: right;
+        margin-right: 3rem;
+        padding: 5px;
+    
+    }
+    p {
+        margin: 1rem;
+    }
+}
+
+.contenedor {
+    background-color: $fondogris;
+    display: grid;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "textoSecu imgIsfa "
+        "imgCurso textoCurso ";
+        .texto1 {
+            background-color: rgba(94, 93, 93, 0.81);
+            text-align: center;
+            padding-top: 15px;
+            color: white;
+            text-transform: uppercase;
+            grid-area: textoSecu;
+        }
+        .img1 {
+            background-image: url(./img/isfa.png);
+            background-size: cover;
+            background-position: center;
+            width: 50%;
+            height: 80%;
+            align-self: center;
+            justify-self: center;
+            border: 6px inset #008000;
+            border-radius: 10px;
+            grid-area: imgIsfa;
+        }
+        .img2 {
+            background-image: url(./img/udemy.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 50%;
+            height: 80%;
+            align-self: center;
+            justify-self: center;
+            border: 6px outset #008000;
+            border-radius: 10px;
+            grid-area: imgCurso;
+        }
+        
+        .texto2 {
+            background-color: rgba(94, 93, 93, 0.81);
+            text-align: center;
+            padding-top: 15px;
+            color: white;
+            text-transform: uppercase;
+            grid-area: textoCurso;
+        }
+        
+        .secu {
+            text-decoration: underline;
+            padding: 10px;
+            font-size: 30px;
+        }
+        
+        .tituloCurso {
+            text-decoration: underline;
+            padding: 10px;
+            font-size: 30px;
+        }
+        
+        #edu {
+            text-transform: capitalize;
+            padding: 40px;
+            font-size: 15px;
+        }
+        
+        #curso {
+            text-transform: capitalize;
+            padding: 30px;
+            font-size: 15px;
+        }
+        
+        #secuTerminado {
+            padding: 50px;
+        }
+}
+
+
+
+
+
+
+
+#cardExp {
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: $fondogris;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+    .card {
+        width: 30%;
+        height: 450px;
+        min-height: 300px;
+        background-color: $colorfondo;
+        padding: 10px;
+        border: 3px solid #070505;
+    }
+    .cardImg {
+        background-image: url(img/complejo.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    .cardImg2 {
+        background-image: url(img/empty\ img.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .cardImg3 {
+        background-image: url(img/empty\ img.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .cardTitle {
+        text-align: center;
+        font-family: 'Anuphan', sans-serif;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        font-size: 25px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .cardDesc {
+        padding: 15px;
+        text-align: justify;
+        color: white;
+        text-shadow: 0 0 5px #000;
+        text-transform: capitalize;
+        margin: 5px;
+    }
+    
+    .cardBoton {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 90%;
+        margin: 5%;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+}
+
+#cardPort {
+    display: flex;
+    position: fixed;
+    justify-content: space-evenly;
+    background-color: $fondogris;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 45px;
+    .cardPortaf {
+        width: 30%;
+        height: 450px;
+        min-height: 300px;
+        background-color: $colorfondo;
+        padding: 10px;
+        border: 3px solid #070505;
+    }
+    
+    .cardImgPort {
+        background-image: url(./img/GitHub.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .cardImgPort2 {
+        background-image: url(./img/GitHub.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .cardImgPort3 {
+        background-image: url(./img/GitHub.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height: 180px;
+    }
+    
+    .cardTitlePort {
+        text-align: center;
+        font-family: 'Anuphan', sans-serif;
+        color: #fff;
+        text-shadow: 0 0 5px #000;
+        font-size: 25px;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: underline;
+    }
+    
+    .cardDescPort {
+        padding: 15px;
+        text-align: justify;
+        color: white;
+        text-shadow: 0 0 5px #000;
+        text-transform: capitalize;
+        margin: 5px;
+    }
+    
+    .cardBotonPort {
+        background-color: #333;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        width: 90%;
+        margin: 5%;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        transition: 0.3s;
+    }
+    
+    .cardBotonPort:hover {
+        background-color: rgb(224, 146, 0)
+    }
+    
+    .cardBoton:hover {
+        background-color: rgb(224, 146, 0)
+    }
+}
+
+
+
+.grupoForm {
+    font-family: 'Anuphan', sans-serif;
+    font-size: 40px;
+    background-color: #d8d8d8cf;
+    height: 100%;
+
+}
+
+.formulario {
+    padding: 50px;
+    position: fixed;
+    background-color: $fondogris;
+    width: 100%;
+    height: 100vh;
+}
+
+.contacta {
+    font-family: 'Anuphan', sans-serif;
+    color: #077707;
+    background-color: $fondogris;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    padding: 20px;
+    text-decoration: underline;
+
+}
+
+@media screen and (max-width: 480px) {
+    header main {
+        width: 100%;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        max-width: 320px;
+        font-size: 25px;
+        padding-top: 10px;
+        line-height: 10px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto;
+        left: 0;
+    }
+
+    .dropdown {
+        visibility: inherit;
+        transition: 0, 3s;
+        height: 50px;
+        width: 5px;
+        left: 20px;
+        margin-block: 20px;
+    }
+
+    .menu {
+        height: 80px;
+        width: 100%;
+        font-size: 20px;
+        padding: 1px;
+    }
+
+    .item__menu {
+        visibility: hidden;
+    }
+
+    .presentacion {
+        height: 100vh;
+        max-width: 480px;
+    }
+
+    .presentacionTexto {
+        display: inline;
+        max-width: 480px;
+        text-align: center;
+        padding-bottom: 0;
+        justify-content: center;
+        margin: 20px;
+        float: center;
+        left: 0;
+    }
+
+    .presentacionFoto {
+        display: block;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px;
+        margin-top: 1px;
+    }
+
+    .contenedor {
+        height: auto;
+        width: 100%;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            "textoSecu"
+            "imgIsfa"
+            "textoCurso"
+            "imgCurso";
+    }
+
+    .img1 {
+        width: 320px;
+        height: 220px;
+    }
+
+    .img2 {
+        width: 320px;
+        height: 220px;
+    }
+
+    #cardExp {
+        display: block;
+        position: relative;
+        max-width: 480px;
+        height: 1450px;
+        padding: 3px;
+        height: 1fr;
+    }
+
+    .card {
+        position: relative;
+        width: 300px;
+        margin: 5px;
+        left: 0;
+        height: 1fr;
+    }
+
+    #cardPort {
+        display: block;
+        position: relative;
+        max-width: 480px;
+        height: 1450px;
+        padding: 3px;
+        height: 1fr;
+    }
+
+    .cardPortaf {
+        position: relative;
+        width: 300px;
+        margin: 5px;
+        left: 0;
+        height: 1fr;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer section {
+        visibility: hidden;
+    }
+}

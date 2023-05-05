@@ -1,113 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&display=swap");
 
-header main{
-    background-color: #00b600;
-    color: white;
-    padding: 1rem;
-
-}
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Anuphan', sans-serif;
+    font-family: "Anuphan", sans-serif;
     font-weight: normal;
 }
 
-header main{
-background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
-background-position: center;
-
-    text-transform:capitalize;
+header main {
+    background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
+    background-position: center;
+    text-transform: capitalize;
+    color: white;
+    padding: 1rem;
 }
 
-header h1{
+header h1 {
     font-size: 3rem;
     text-align: center;
     margin: 0;
 }
-header h2{
+
+header h2 {
     font-size: 2rem;
     text-align: center;
     padding: 0;
     margin: 0;
 }
-.titulo{
+
+.titulo {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo{
+
+.logo {
     position: absolute;
-margin-left: 10px;
+    margin-left: 10px;
 }
 
-.menu{
+.menu {
     list-style-type: none;
     background-color: #084e08;
     padding-block: 15px;
     height: 50px;
 }
-.item__menu{
+
+.item__menu {
     display: inline-block;
     margin-inline: 7%;
 }
-.item__menu a{
+
+.item__menu a {
     color: white;
     text-decoration: none;
 }
 
 .item__menu.active a,
-.item__menu a:hover{
+.item__menu a:hover {
     text-decoration: underline 2px;
 }
-.dropdown{
+
+.dropdown {
     display: flex;
     width: 0px;
     height: 0px;
     visibility: hidden;
 }
 
-.presentacion{
-    background-color: #d8d8d8cf;
+.presentacion {
+    background-color: rgba(216, 216, 216, 0.8117647059);
     position: fixed;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100vh;
-
 }
-.presentacionTexto{
+
+.presentacionTexto {
     display: flex;
     max-width: 500px;
     float: right;
     margin-right: 200px;
     margin-top: 150px;
 }
-.presentacionFoto{
-margin-left: 300px;
-margin-bottom: 50px;
+
+.presentacionFoto {
+    margin-left: 300px;
+    margin-bottom: 50px;
 }
+
 footer {
-    background-color: #084e08;;
+    background-color: #084e08;
     position: fixed;
     color: white;
     left: 0;
     bottom: 0;
     width: 100%;
 }
-footer section{
+
+footer section {
     display: inline;
     float: right;
     margin-right: 3rem;
     padding: 5px;
-
 }
-footer p{
+
+footer p {
     margin: 1rem;
 }
-.contenedor{
-    background-color: rgba(216, 216, 216, 0.81);
+
+.contenedor {
+    background-color: rgba(216, 216, 216, 0.8117647059);
     display: grid;
     position: absolute;
     width: 100%;
@@ -115,12 +120,10 @@ footer p{
     padding-bottom: 45px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-    "textoSecu imgIsfa "
-    "imgCurso textoCurso " ;
+    grid-template-areas: "textoSecu imgIsfa " "imgCurso textoCurso ";
 }
 
-.texto1{
+.contenedor .texto1 {
     background-color: rgba(94, 93, 93, 0.81);
     text-align: center;
     padding-top: 15px;
@@ -128,9 +131,10 @@ footer p{
     text-transform: uppercase;
     grid-area: textoSecu;
 }
-.img1{
+
+.img1 {
     background-image: url(./img/isfa.png);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     width: 50%;
     height: 80%;
@@ -140,9 +144,10 @@ footer p{
     border-radius: 10px;
     grid-area: imgIsfa;
 }
-.img2{
+
+.img2 {
     background-image: url(./img/udemy.png);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 50%;
@@ -153,72 +158,73 @@ footer p{
     border-radius: 10px;
     grid-area: imgCurso;
 }
-.texto2{
-    background-color:  rgba(94, 93, 93, 0.81);
+
+.contenedor .texto2 {
+    background-color: rgba(94, 93, 93, 0.81);
     text-align: center;
     padding-top: 15px;
     color: white;
     text-transform: uppercase;
     grid-area: textoCurso;
 }
-.secu{
+
+.contenedor .secu {
     text-decoration: underline;
     padding: 10px;
     font-size: 30px;
 }
-.tituloCurso{
+
+.contenedor .tituloCurso {
     text-decoration: underline;
     padding: 10px;
     font-size: 30px;
 }
-#edu{
+
+.contenedor #edu {
     text-transform: capitalize;
     padding: 40px;
     font-size: 15px;
 }
-#curso{
+
+.contenedor #curso {
     text-transform: capitalize;
     padding: 30px;
     font-size: 15px;
 }
-#secuTerminado{
+
+.contenedor #secuTerminado {
     padding: 50px;
 }
 
-#cardExp{
+#cardExp {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
-    background-color: #d8d8d8cf;
+    background-color: rgba(216, 216, 216, 0.8117647059);
     padding: 20px;
     width: 100%;
     height: 100%;
     padding-bottom: 45px;
 }
-.card{
+
+.card {
     width: 30%;
     height: 450px;
     min-height: 300px;
-    background-color: #077707;
+    background-color: #084e08;
     padding: 10px;
     border: 3px solid #070505;
 }
 
-.cardImg{
+.cardImg {
     background-image: url(img/complejo.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 180px;
 }
-.cardImg2{
-    background-image: url(img/empty\ img.png);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 180px;
-}
-.cardImg3{
+
+.cardImg2 {
     background-image: url(img/empty\ img.png);
     background-size: cover;
     background-position: center;
@@ -226,9 +232,17 @@ footer p{
     height: 180px;
 }
 
-.cardTitle{
+.cardImg3 {
+    background-image: url(img/empty\ img.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+}
+
+.cardTitle {
     text-align: center;
-    font-family: 'Anuphan', sans-serif;
+    font-family: "Anuphan", sans-serif;
     color: #fff;
     text-shadow: 0 0 5px #000;
     font-size: 25px;
@@ -237,7 +251,7 @@ footer p{
     text-decoration: underline;
 }
 
-.cardDesc{
+.cardDesc {
     padding: 15px;
     text-align: justify;
     color: white;
@@ -246,7 +260,7 @@ footer p{
     margin: 5px;
 }
 
-.cardBoton{
+.cardBoton {
     background-color: #333;
     color: #fff;
     text-decoration: none;
@@ -259,48 +273,54 @@ footer p{
     padding: 10px 20px;
     transition: 0.3s;
 }
-#cardPort{
+
+#cardPort {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
-    background-color: #d8d8d8cf;
+    background-color: rgba(216, 216, 216, 0.8117647059);
     padding: 20px;
     width: 100%;
     height: 100%;
     padding-bottom: 45px;
 }
-.cardPortaf{
+
+.cardPortaf {
     width: 30%;
     height: 450px;
     min-height: 300px;
-    background-color: #077707;
+    background-color: #084e08;
     padding: 10px;
     border: 3px solid #070505;
 }
-.cardImgPort{
+
+.cardImgPort {
     background-image: url(./img/GitHub.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 180px;
 }
-.cardImgPort2{
+
+.cardImgPort2 {
     background-image: url(./img/GitHub.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 180px;
 }
-.cardImgPort3{
+
+.cardImgPort3 {
     background-image: url(./img/GitHub.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 180px;
 }
-.cardTitlePort{
+
+.cardTitlePort {
     text-align: center;
-    font-family: 'Anuphan', sans-serif;
+    font-family: "Anuphan", sans-serif;
     color: #fff;
     text-shadow: 0 0 5px #000;
     font-size: 25px;
@@ -308,7 +328,8 @@ footer p{
     text-transform: uppercase;
     text-decoration: underline;
 }
-.cardDescPort{
+
+.cardDescPort {
     padding: 15px;
     text-align: justify;
     color: white;
@@ -316,7 +337,8 @@ footer p{
     text-transform: capitalize;
     margin: 5px;
 }
-.cardBotonPort{
+
+.cardBotonPort {
     background-color: #333;
     color: #fff;
     text-decoration: none;
@@ -330,149 +352,165 @@ footer p{
     transition: 0.3s;
 }
 
-.cardBotonPort:hover{
-    background-color: rgb(224, 146, 0)}
-.cardBoton:hover{
-    background-color: rgb(224, 146, 0)}
+.cardBotonPort:hover {
+    background-color: rgb(224, 146, 0);
+}
 
-    .grupoForm{
-        font-family: 'Anuphan', sans-serif;
-        font-size: 40px;
-        background-color: #d8d8d8cf;
-        height: 100%;
-        
-    }
-    .formulario{
-        padding: 50px;
-        position: fixed;
-        background-color: #d8d8d8cf;
-        width: 100%;
-        height: 100vh;
-    }
-    .contacta{
-    font-family: 'Anuphan', sans-serif;
+.cardBoton:hover {
+    background-color: rgb(224, 146, 0);
+}
+
+.grupoForm {
+    font-family: "Anuphan", sans-serif;
+    font-size: 40px;
+    background-color: rgba(216, 216, 216, 0.8117647059);
+    height: 100%;
+}
+
+.formulario {
+    padding: 50px;
+    position: fixed;
+    background-color: rgba(216, 216, 216, 0.8117647059);
+    width: 100%;
+    height: 100vh;
+}
+
+.contacta {
+    font-family: "Anuphan", sans-serif;
     color: #077707;
-    background-color: #d8d8d8cf;
+    background-color: rgba(216, 216, 216, 0.8117647059);
     text-align: center;
     margin: 0;
     font-size: 50px;
     padding: 20px;
     text-decoration: underline;
+}
 
+@media screen and (max-width: 480px) {
+    header main {
+        width: 100%;
     }
 
-    @media screen and (max-width: 480px){
-        header main{
-            width: 100%;
-        }
-        .titulo {
-            display: flex;
-            justify-content: center;
-            max-width: 320px;
-            font-size: 25px;
-            padding-top: 10px;
-            line-height: 10px;
-            width: 100%;
-        }
-        .logo{
-            width: 50px;
-            height: auto;
-            left: 0;
-        }
-        .dropdown{
-            visibility: inherit;
-            transition: 0,3s;
-            height: 50px;
-            width: 5px;
-            left: 20px;
-            margin-block: 20px;
-        }
-        .menu{
-            height: 80px;
-            width: 100%;
-            font-size: 20px;
-            padding: 1px;
-        }
-        .item__menu{
-            visibility: hidden;
-        }
-        .presentacion{
-            height: 100vh;
-            max-width: 480px;
-        }
-        .presentacionTexto{
-            display: inline;
-            max-width: 480px;
-            text-align: center;
-            padding-bottom: 0;
-            justify-content: center;
-            margin: 20px;
-            float: center;
-            left: 0;
-            }
-            .presentacionFoto{
-            display: block;
-            width: 50%;
-            align-items: center;
-            justify-content: center;
-            margin: 80px;
-            margin-top: 1px;
-                }
-                
-        .contenedor{
-            height: auto;
-            width: 100%;
-            grid-template-columns: 1;
-            grid-template-rows: repeat(4,1fr);
-            grid-template-areas: 
-            "textoSecu"
-            "imgIsfa"
-            "textoCurso"
-            "imgCurso";
-        }
-        .img1{
-            width: 320px;
-            height: 220px;
-        }
-        .img2{
-            width: 320px;
-            height: 220px;
-        }
-        #cardExp{
+    .titulo {
+        display: flex;
+        justify-content: center;
+        max-width: 320px;
+        font-size: 25px;
+        padding-top: 10px;
+        line-height: 10px;
+        width: 100%;
+    }
+
+    .logo {
+        width: 50px;
+        height: auto;
+        left: 0;
+    }
+
+    .dropdown {
+        visibility: inherit;
+        transition: 0, 3s;
+        height: 50px;
+        width: 5px;
+        left: 20px;
+        margin-block: 20px;
+    }
+
+    .menu {
+        height: 80px;
+        width: 100%;
+        font-size: 20px;
+        padding: 1px;
+    }
+
+    .item__menu {
+        visibility: hidden;
+    }
+
+    .presentacion {
+        height: 100vh;
+        max-width: 480px;
+    }
+
+    .presentacionTexto {
+        display: inline;
+        max-width: 480px;
+        text-align: center;
+        padding-bottom: 0;
+        justify-content: center;
+        margin: 20px;
+        float: center;
+        left: 0;
+    }
+
+    .presentacionFoto {
+        display: block;
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        margin: 80px;
+        margin-top: 1px;
+    }
+
+    .contenedor {
+        height: auto;
+        width: 100%;
+        grid-template-columns: 1;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "textoSecu" "imgIsfa" "textoCurso" "imgCurso";
+    }
+
+    .img1 {
+        width: 320px;
+        height: 220px;
+    }
+
+    .img2 {
+        width: 320px;
+        height: 220px;
+    }
+
+    #cardExp {
         display: block;
         position: relative;
-            max-width: 480px;
-            height: 1450px;
-            padding: 3px;
-            height: 1fr;
-        }
-        .card{
-            position: relative;
-            width: 300px;
-            margin: 5px;
-            left: 0;
-            height: 1fr;
-        }
+        max-width: 480px;
+        height: 1450px;
+        padding: 3px;
+        height: 1fr;
+    }
 
-        #cardPort{
-            display: block;
-            position: relative;
-                max-width: 480px;
-                height: 1450px;
-                padding: 3px;
-                height: 1fr;
-            }
-            .cardPortaf{
-                position: relative;
-                width: 300px;
-                margin: 5px;
-                left: 0;
-                height: 1fr;
-            }
-        footer{
-            width: 100%;
-        }
-        footer section{
+    .card {
+        position: relative;
+        width: 300px;
+        margin: 5px;
+        left: 0;
+        height: 1fr;
+    }
+
+    #cardPort {
+        display: block;
+        position: relative;
+        max-width: 480px;
+        height: 1450px;
+        padding: 3px;
+        height: 1fr;
+    }
+
+    .cardPortaf {
+        position: relative;
+        width: 300px;
+        margin: 5px;
+        left: 0;
+        height: 1fr;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    footer section {
         visibility: hidden;
-        }   
-        }
+    }
+}
+
+/*# sourceMappingURL=style.css.map */
