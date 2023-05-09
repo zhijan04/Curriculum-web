@@ -73,14 +73,16 @@ header{ main {
     visibility: hidden;
 }
 
+@mixin tamano($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
 .presentacion {
     background-color: $fondogris;
     position: fixed;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100vh;
-
+    @include tamano(100%, 100vh)
 }
 
 .presentacionTexto {
@@ -120,8 +122,7 @@ footer {
     background-color: $fondogris;
     display: grid;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    @include tamano(100%, 100%);
     padding-bottom: 45px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -140,8 +141,7 @@ footer {
             background-image: url(./img/isfa.png);
             background-size: cover;
             background-position: center;
-            width: 50%;
-            height: 80%;
+            @include tamano(50%, 80%);
             align-self: center;
             justify-self: center;
             border: 6px inset #008000;
@@ -153,8 +153,7 @@ footer {
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            width: 50%;
-            height: 80%;
+            @include tamano(50%, 80%);
             align-self: center;
             justify-self: center;
             border: 6px outset #008000;
@@ -200,20 +199,13 @@ footer {
         }
 }
 
-
-
-
-
-
-
 #cardExp {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
     background-color: $fondogris;
     padding: 20px;
-    width: 100%;
-    height: 100%;
+    @include tamano(100%, 100%);
     padding-bottom: 45px;
     .card {
         width: 30%;
@@ -223,27 +215,25 @@ footer {
         padding: 10px;
         border: 3px solid #070505;
     }
-    .cardImg {
-        background-image: url(img/complejo.jpg);
+    %bgCoverCenter{
         background-size: cover;
         background-position: center;
-        width: 100%;
-        height: 180px;
+    }
+    .cardImg {
+        background-image: url(img/complejo.jpg);
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     .cardImg2 {
         background-image: url(img/empty\ img.png);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 180px;
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     
     .cardImg3 {
         background-image: url(img/empty\ img.png);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 180px;
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     
     .cardTitle {
@@ -278,21 +268,29 @@ footer {
         text-transform: uppercase;
         padding: 10px 20px;
         transition: 0.3s;
+    }    
+    .cardBotonPort:hover {
+        background-color: rgb(224, 146, 0)
+    }
+    
+    .cardBoton:hover {
+        background-color: rgb(224, 146, 0)
     }
 }
-
+    %bgCoverCenter{
+        background-size: cover;
+        background-position: center;
+    }
 #cardPort {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
     background-color: $fondogris;
     padding: 20px;
-    width: 100%;
-    height: 100%;
+    @include tamano(100%, 100%);
     padding-bottom: 45px;
     .cardPortaf {
-        width: 30%;
-        height: 450px;
+        @include tamano(30%, 450px);
         min-height: 300px;
         background-color: $colorfondo;
         padding: 10px;
@@ -301,26 +299,20 @@ footer {
     
     .cardImgPort {
         background-image: url(./img/GitHub.jpeg);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 180px;
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     
     .cardImgPort2 {
         background-image: url(./img/GitHub.jpeg);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 180px;
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     
     .cardImgPort3 {
         background-image: url(./img/GitHub.jpeg);
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 180px;
+        @extend %bgCoverCenter;
+        @include tamano(100%, 180px);
     }
     
     .cardTitlePort {
@@ -356,14 +348,6 @@ footer {
         padding: 10px 20px;
         transition: 0.3s;
     }
-    
-    .cardBotonPort:hover {
-        background-color: rgb(224, 146, 0)
-    }
-    
-    .cardBoton:hover {
-        background-color: rgb(224, 146, 0)
-    }
 }
 
 
@@ -380,8 +364,7 @@ footer {
     padding: 50px;
     position: fixed;
     background-color: $fondogris;
-    width: 100%;
-    height: 100vh;
+    @include tamano(100%, 100vh);
 }
 
 .contacta {
@@ -412,8 +395,7 @@ footer {
     }
 
     .logo {
-        width: 50px;
-        height: auto;
+        @include tamano(50px, auto);
         left: 0;
     }
 
@@ -465,59 +447,50 @@ footer {
     .contenedor {
         height: auto;
         width: 100%;
-        grid-template-columns: 1;
+        grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
             "textoSecu"
             "imgIsfa"
             "textoCurso"
             "imgCurso";
+    
+        .img1 {
+            @include tamano(320px, 220px);
     }
 
-    .img1 {
-        width: 320px;
-        height: 220px;
+        .img2 {
+            @include tamano(320px, 220px);
     }
-
-    .img2 {
-        width: 320px;
-        height: 220px;
-    }
+}
 
     #cardExp {
         display: block;
         position: relative;
         max-width: 480px;
-        height: 1450px;
         padding: 3px;
         height: 1fr;
-    }
-
     .card {
         position: relative;
-        width: 300px;
+        @include tamano(300px, 1fr);
         margin: 5px;
         left: 0;
-        height: 1fr;
     }
-
+}
     #cardPort {
         display: block;
         position: relative;
         max-width: 480px;
-        height: 1450px;
         padding: 3px;
         height: 1fr;
-    }
-
-    .cardPortaf {
+    
+        .cardPortaf {
         position: relative;
-        width: 300px;
+        @include tamano(300px, 1fr);
         margin: 5px;
-        left: 0;
-        height: 1fr;
+        left: 1%;
     }
-
+}
     footer {
         width: 100%;
     }
