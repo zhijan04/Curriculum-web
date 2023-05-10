@@ -465,30 +465,36 @@ footer {
 }
 
     #cardExp {
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: relative;
-        max-width: 480px;
         padding: 3px;
+        max-width: 480px;
         height: 1fr;
     .card {
         position: relative;
-        @include tamano(300px, 1fr);
-        margin: 5px;
-        left: 0;
+        justify-content: space-around;
+        @include tamano(auto, 1fr);
+        margin: 20px;
+        margin-bottom: 0;
+        right: 0px;
     }
 }
     #cardPort {
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: relative;
-        max-width: 480px;
         padding: 3px;
+        max-width: 480px;
         height: 1fr;
-    
+
         .cardPortaf {
         position: relative;
-        @include tamano(300px, 1fr);
-        margin: 5px;
-        left: 1%;
+        justify-content: space-around;
+        @include tamano(auto, 1fr);
+        margin: 20px;
+        margin-bottom: 0;
+        right: 0px;
     }
 }
     footer {

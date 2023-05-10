@@ -427,32 +427,38 @@ footer p {
     height: 220px;
   }
   #cardExp {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    max-width: 480px;
     padding: 3px;
+    max-width: 480px;
     height: 1fr;
   }
   #cardExp .card {
     position: relative;
-    width: 300px;
+    justify-content: space-around;
+    width: auto;
     height: 1fr;
-    margin: 5px;
-    left: 0;
+    margin: 20px;
+    margin-bottom: 0;
+    right: 0px;
   }
   #cardPort {
-    display: block;
+    display: flex;
+    flex-direction: column;
     position: relative;
-    max-width: 480px;
     padding: 3px;
+    max-width: 480px;
     height: 1fr;
   }
   #cardPort .cardPortaf {
     position: relative;
-    width: 300px;
+    justify-content: space-around;
+    width: auto;
     height: 1fr;
-    margin: 5px;
-    left: 1%;
+    margin: 20px;
+    margin-bottom: 0;
+    right: 0px;
   }
   footer {
     width: 100%;
