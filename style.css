@@ -349,8 +349,8 @@ footer p {
   background-color: rgba(216, 216, 216, 0.8117647059);
   text-align: center;
   margin: 0;
-  font-size: 40px;
-  padding: 10px;
+  font-size: 50px;
+  padding: 20px;
   text-decoration: underline;
 }
 
@@ -361,7 +361,7 @@ footer p {
   .titulo {
     display: flex;
     justify-content: center;
-    max-width: 320px;
+    text-align: center;
     font-size: 25px;
     padding-top: 10px;
     line-height: 10px;
