@@ -13,7 +13,7 @@ $fondogris: #d8d8d8cf;
 }
 
 header{ main {
-    background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
+    background-image: linear-gradient(to bottom, #0acb23, #0ab11a, #079810, #048007, #016901);
     background-position: center;
     text-transform: capitalize;
     color: white;
@@ -214,6 +214,10 @@ footer {
         background-color: $colorfondo;
         padding: 10px;
         border: 3px solid #070505;
+        transition: all 0.2s ease;
+    }
+    .card:hover{
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
     }
     %bgCoverCenter{
         background-size: cover;
@@ -295,8 +299,11 @@ footer {
         background-color: $colorfondo;
         padding: 10px;
         border: 3px solid #070505;
+        transition: all 0.3s ease;
     }
-    
+    .cardPortaf:hover{
+        box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
+    }
     .cardImgPort {
         background-image: url(./img/GitHub.jpeg);
         @extend %bgCoverCenter;
@@ -348,6 +355,13 @@ footer {
         padding: 10px 20px;
         transition: 0.3s;
     }
+    .cardBotonPort:hover {
+        background-color: rgb(224, 146, 0)
+    }
+    
+    .cardBoton:hover {
+        background-color: rgb(224, 146, 0)
+    }
 }
 
 
@@ -361,7 +375,7 @@ footer {
 }
 
 .formulario {
-    padding: 50px;
+    padding: 5px;
     position: fixed;
     background-color: $fondogris;
     @include tamano(100%, 100vh);
@@ -373,8 +387,8 @@ footer {
     background-color: $fondogris;
     text-align: center;
     margin: 0;
-    font-size: 50px;
-    padding: 20px;
+    font-size: 40px;
+    padding: 18px;
     text-decoration: underline;
 
 }

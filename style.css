@@ -8,7 +8,7 @@
 }
 
 header main {
-  background-image: url(./img/flat\,750x1000\,075\,f.u1.jpg);
+  background-image: linear-gradient(to bottom, #0acb23, #0ab11a, #079810, #048007, #016901);
   background-position: center;
   text-transform: capitalize;
   color: white;
@@ -200,6 +200,10 @@ footer p {
   background-color: #084e08;
   padding: 10px;
   border: 3px solid #070505;
+  transition: all 0.2s ease;
+}
+#cardExp .card:hover {
+  box-shadow: 0 0.1rem 0.4rem rgb(0, 0, 0);
 }
 #cardExp #cardPort .cardImgPort3, #cardPort #cardExp .cardImgPort3, #cardExp #cardPort .cardImgPort2, #cardPort #cardExp .cardImgPort2, #cardExp #cardPort .cardImgPort, #cardPort #cardExp .cardImgPort, #cardExp .cardImg3, #cardExp .cardImg2, #cardExp .cardImg {
   background-size: cover;
@@ -280,6 +284,10 @@ footer p {
   background-color: #084e08;
   padding: 10px;
   border: 3px solid #070505;
+  transition: all 0.3s ease;
+}
+#cardPort .cardPortaf:hover {
+  box-shadow: 0 0.1rem 0.4rem rgb(0, 0, 0);
 }
 #cardPort .cardImgPort {
   background-image: url(./img/GitHub.jpeg);
@@ -327,6 +335,12 @@ footer p {
   padding: 10px 20px;
   transition: 0.3s;
 }
+#cardPort .cardBotonPort:hover {
+  background-color: rgb(224, 146, 0);
+}
+#cardPort .cardBoton:hover {
+  background-color: rgb(224, 146, 0);
+}
 
 .grupoForm {
   font-family: "Anuphan", sans-serif;
@@ -336,7 +350,7 @@ footer p {
 }
 
 .formulario {
-  padding: 50px;
+  padding: 5px;
   position: fixed;
   background-color: rgba(216, 216, 216, 0.8117647059);
   width: 100%;
@@ -349,8 +363,8 @@ footer p {
   background-color: rgba(216, 216, 216, 0.8117647059);
   text-align: center;
   margin: 0;
-  font-size: 50px;
-  padding: 20px;
+  font-size: 40px;
+  padding: 18px;
   text-decoration: underline;
 }
 
