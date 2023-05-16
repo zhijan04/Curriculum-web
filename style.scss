@@ -305,9 +305,9 @@ footer {
         box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 1);
     }
     .cardImgPort {
-        background-image: url(./img/GitHub.jpeg);
+        background-image: url(./img/moto.jpg);
         @extend %bgCoverCenter;
-        @include tamano(100%, 180px);
+        @include tamano(100%, 220px);
     }
     
     .cardImgPort2 {
