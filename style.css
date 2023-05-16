@@ -368,7 +368,13 @@ footer p {
   text-decoration: underline;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
+  #edu {
+    min-width: 319px;
+    max-width: 320px;
+  }
+}
+@media screen and (max-width: 1200px) {
   header main {
     width: 100%;
   }
@@ -405,11 +411,11 @@ footer p {
   }
   .presentacion {
     height: 100vh;
-    max-width: 480px;
+    max-width: 1200px;
   }
   .presentacionTexto {
     display: inline;
-    max-width: 480px;
+    max-width: 1200px;
     text-align: center;
     padding-bottom: 0;
     justify-content: center;
@@ -445,7 +451,7 @@ footer p {
     flex-direction: column;
     position: relative;
     padding: 3px;
-    max-width: 480px;
+    max-width: 1200px;
     height: 1fr;
   }
   #cardExp .card {
@@ -462,7 +468,7 @@ footer p {
     flex-direction: column;
     position: relative;
     padding: 3px;
-    max-width: 480px;
+    max-width: 1200px;
     height: 1fr;
   }
   #cardPort .cardPortaf {
