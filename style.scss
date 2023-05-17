@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@200;400;600&display=swap');
 
 $colorfondo: #084e08;
-$fondogris: #d8d8d8cf;
+$fondogris: url(./img/trama.svg);
 
 
 * {
@@ -78,7 +78,9 @@ header{ main {
     height: $alto;
 }
 .presentacion {
-    background-color: $fondogris;
+    background-image: $fondogris;
+    background-position: center;
+    background-size: cover;
     position: fixed;
     margin: 0;
     padding: 0;
@@ -91,6 +93,9 @@ header{ main {
     float: right;
     margin-right: 200px;
     margin-top: 150px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: #d8d8d8;
 }
 
 .presentacionFoto {
@@ -119,7 +124,9 @@ footer {
 }
 
 .contenedor {
-    background-color: $fondogris;
+    background-image: $fondogris;
+    background-position: center;
+    background-size: cover;
     display: grid;
     position: absolute;
     @include tamano(100%, 100%);
@@ -130,7 +137,7 @@ footer {
         "textoSecu imgIsfa "
         "imgCurso textoCurso ";
         .texto1 {
-            background-color: rgba(94, 93, 93, 0.81);
+            background-color: rgb(94, 93, 93);
             text-align: center;
             padding-top: 15px;
             color: white;
@@ -162,7 +169,7 @@ footer {
         }
         
         .texto2 {
-            background-color: rgba(94, 93, 93, 0.81);
+            background-color: rgb(94, 93, 93);
             text-align: center;
             padding-top: 15px;
             color: white;
@@ -203,10 +210,11 @@ footer {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
-    background-color: $fondogris;
+    background-image: $fondogris;
+    background-position: center;
+    background-size: cover;
     padding: 20px;
     @include tamano(100%, 100%);
-    padding-bottom: 45px;
     .card {
         width: 30%;
         height: 450px;
@@ -229,13 +237,13 @@ footer {
         @include tamano(100%, 180px);
     }
     .cardImg2 {
-        background-image: url(img/empty\ img.png);
+        background-image: url(img/atencionalcliente.jpg);
         @extend %bgCoverCenter;
         @include tamano(100%, 180px);
     }
     
     .cardImg3 {
-        background-image: url(img/empty\ img.png);
+        background-image: url(img/redes.jpg);
         @extend %bgCoverCenter;
         @include tamano(100%, 180px);
     }
@@ -289,7 +297,9 @@ footer {
     display: flex;
     position: fixed;
     justify-content: space-evenly;
-    background-color: $fondogris;
+    background-image: $fondogris;
+    background-position: center;
+    background-size: cover;
     padding: 20px;
     @include tamano(100%, 100%);
     padding-bottom: 45px;
@@ -297,7 +307,7 @@ footer {
         @include tamano(30%, 450px);
         min-height: 300px;
         background-color: $colorfondo;
-        padding: 10px;
+        margin-bottom: 10px;
         border: 3px solid #070505;
         transition: all 0.3s ease;
     }
@@ -311,13 +321,13 @@ footer {
     }
     
     .cardImgPort2 {
-        background-image: url(./img/GitHub.jpeg);
+        background-image: url(./img/curriculum-vitaejpg.webp);
         @extend %bgCoverCenter;
         @include tamano(100%, 180px);
     }
     
     .cardImgPort3 {
-        background-image: url(./img/GitHub.jpeg);
+        background-image: url(./img/complejo.jpg);
         @extend %bgCoverCenter;
         @include tamano(100%, 180px);
     }
@@ -369,22 +379,24 @@ footer {
 .grupoForm {
     font-family: 'Anuphan', sans-serif;
     font-size: 40px;
-    background-color: #d8d8d8cf;
-    height: 100%;
+    background-image: $fondogris;
+    background-position: center;
+    background-size: cover;;
+    height: 50%;
 
 }
 
 .formulario {
     padding: 5px;
     position: fixed;
-    background-color: $fondogris;
+    background-color: #d8d8d8cf;
     @include tamano(100%, 100vh);
 }
 
 .contacta {
     font-family: 'Anuphan', sans-serif;
     color: #077707;
-    background-color: $fondogris;
+    background-color: #d8d8d8cf;
     text-align: center;
     margin: 0;
     font-size: 40px;
@@ -495,8 +507,9 @@ footer {
         justify-content: space-around;
         @include tamano(auto, 1fr);
         margin: 20px;
-        margin-bottom: 0;
+        margin-bottom: 80px;
         right: 0px;
+        height: 20%;
     }
 }
     #cardPort {
@@ -505,14 +518,14 @@ footer {
         position: relative;
         padding: 3px;
         max-width: 1200px;
-        height: 1fr;
+        height: 20%;
 
         .cardPortaf {
         position: relative;
         justify-content: space-around;
         @include tamano(auto, 1fr);
         margin: 20px;
-        margin-bottom: 0;
+        margin-bottom: 80px;
         right: 0px;
     }
 }

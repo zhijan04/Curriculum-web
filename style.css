@@ -68,7 +68,9 @@ header h2 {
 }
 
 .presentacion {
-  background-color: rgba(216, 216, 216, 0.8117647059);
+  background-image: url(./img/trama.svg);
+  background-position: center;
+  background-size: cover;
   position: fixed;
   margin: 0;
   padding: 0;
@@ -82,6 +84,9 @@ header h2 {
   float: right;
   margin-right: 200px;
   margin-top: 150px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #d8d8d8;
 }
 
 .presentacionFoto {
@@ -108,7 +113,9 @@ footer p {
 }
 
 .contenedor {
-  background-color: rgba(216, 216, 216, 0.8117647059);
+  background-image: url(./img/trama.svg);
+  background-position: center;
+  background-size: cover;
   display: grid;
   position: absolute;
   width: 100%;
@@ -119,7 +126,7 @@ footer p {
   grid-template-areas: "textoSecu imgIsfa " "imgCurso textoCurso ";
 }
 .contenedor .texto1 {
-  background-color: rgba(94, 93, 93, 0.81);
+  background-color: rgb(94, 93, 93);
   text-align: center;
   padding-top: 15px;
   color: white;
@@ -152,7 +159,7 @@ footer p {
   grid-area: imgCurso;
 }
 .contenedor .texto2 {
-  background-color: rgba(94, 93, 93, 0.81);
+  background-color: rgb(94, 93, 93);
   text-align: center;
   padding-top: 15px;
   color: white;
@@ -187,11 +194,12 @@ footer p {
   display: flex;
   position: fixed;
   justify-content: space-evenly;
-  background-color: rgba(216, 216, 216, 0.8117647059);
+  background-image: url(./img/trama.svg);
+  background-position: center;
+  background-size: cover;
   padding: 20px;
   width: 100%;
   height: 100%;
-  padding-bottom: 45px;
 }
 #cardExp .card {
   width: 30%;
@@ -215,12 +223,12 @@ footer p {
   height: 180px;
 }
 #cardExp .cardImg2 {
-  background-image: url(img/empty\ img.png);
+  background-image: url(img/atencionalcliente.jpg);
   width: 100%;
   height: 180px;
 }
 #cardExp .cardImg3 {
-  background-image: url(img/empty\ img.png);
+  background-image: url(img/redes.jpg);
   width: 100%;
   height: 180px;
 }
@@ -271,7 +279,9 @@ footer p {
   display: flex;
   position: fixed;
   justify-content: space-evenly;
-  background-color: rgba(216, 216, 216, 0.8117647059);
+  background-image: url(./img/trama.svg);
+  background-position: center;
+  background-size: cover;
   padding: 20px;
   width: 100%;
   height: 100%;
@@ -282,7 +292,7 @@ footer p {
   height: 450px;
   min-height: 300px;
   background-color: #084e08;
-  padding: 10px;
+  margin-bottom: 10px;
   border: 3px solid #070505;
   transition: all 0.3s ease;
 }
@@ -295,12 +305,12 @@ footer p {
   height: 220px;
 }
 #cardPort .cardImgPort2 {
-  background-image: url(./img/GitHub.jpeg);
+  background-image: url(./img/curriculum-vitaejpg.webp);
   width: 100%;
   height: 180px;
 }
 #cardPort .cardImgPort3 {
-  background-image: url(./img/GitHub.jpeg);
+  background-image: url(./img/complejo.jpg);
   width: 100%;
   height: 180px;
 }
@@ -345,8 +355,10 @@ footer p {
 .grupoForm {
   font-family: "Anuphan", sans-serif;
   font-size: 40px;
-  background-color: rgba(216, 216, 216, 0.8117647059);
-  height: 100%;
+  background-image: url(./img/trama.svg);
+  background-position: center;
+  background-size: cover;
+  height: 50%;
 }
 
 .formulario {
@@ -460,8 +472,9 @@ footer p {
     width: auto;
     height: 1fr;
     margin: 20px;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     right: 0px;
+    height: 20%;
   }
   #cardPort {
     display: flex;
@@ -469,7 +482,7 @@ footer p {
     position: relative;
     padding: 3px;
     max-width: 1200px;
-    height: 1fr;
+    height: 20%;
   }
   #cardPort .cardPortaf {
     position: relative;
@@ -477,7 +490,7 @@ footer p {
     width: auto;
     height: 1fr;
     margin: 20px;
-    margin-bottom: 0;
+    margin-bottom: 80px;
     right: 0px;
   }
   footer {
