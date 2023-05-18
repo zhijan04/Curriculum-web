@@ -83,6 +83,7 @@ header{ main {
     background-size: cover;
     position: fixed;
     margin: 0;
+    min-height: 900px;
     padding: 0;
     @include tamano(100%, 100vh)
 }
