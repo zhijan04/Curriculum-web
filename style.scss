@@ -111,6 +111,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 1;
     section {
         display: inline;
         float: right;
@@ -205,7 +206,6 @@ footer {
             padding: 50px;
         }
 }
-
 #cardExp {
     display: flex;
     position: fixed;
@@ -214,6 +214,7 @@ footer {
     background-position: center;
     background-size: cover;
     padding: 20px;
+    z-index: 1;
     @include tamano(100%, 100%);
     .card {
         width: 30%;
@@ -404,6 +405,15 @@ footer {
     text-decoration: underline;
 
 }
+@media screen and (max-height:749px) {
+    #cardExp{
+        position: absolute;
+    }
+    #cardPort{
+        position: absolute;
+    }
+    
+}
 @media screen and (max-width: 320px) {
     #edu {
         min-width: 319px;
@@ -451,8 +461,10 @@ footer {
     }
 
     .presentacion {
+        position: absolute;
         height: 100vh;
         max-width: 1200px;
+        max-height: 800px;
     }
 
     .presentacionTexto {
